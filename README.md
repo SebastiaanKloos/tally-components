@@ -17,37 +17,19 @@ You can install the package via composer:
 composer require key13/tally-components
 ```
 
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="tally-components-migrations"
-php artisan migrate
-```
-
-You can publish the config file with:
-
-```bash
-php artisan vendor:publish --tag="tally-components-config"
-```
-
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="tally-components-views"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
-```
-
 ## Usage
 
 ```php
-$tally-components = new Key13\Tally();
-echo $tally-components->echoPhrase('Hello, Key13!');
+// To load the Tally script
+<x-tally-script />
+
+<x-tally-feedback-button
+    id="abcdef"
+    :info="[
+        'user' => auth()->user()?->email,
+        'url' => url()->current(),
+    ]"
+/>
 ```
 
 ## Testing
