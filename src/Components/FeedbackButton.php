@@ -15,7 +15,8 @@ class FeedbackButton extends Component
         public string $emojiText = '👋',
         public string $emojiAnimation = 'wave',
         public array $info = [],
-    ) {}
+    ) {
+    }
 
     public function render(): View
     {

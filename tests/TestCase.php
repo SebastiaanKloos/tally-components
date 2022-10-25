@@ -4,9 +4,9 @@ namespace Key13\Tally\Tests;
 
 use Filament\FilamentServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Key13\Tally\TallyServiceProvider;
 use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Key13\Tally\TallyServiceProvider;
 
 class TestCase extends Orchestra
 {
